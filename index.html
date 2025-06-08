@@ -1,51 +1,113 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio de Projetos</title>
+  <title>Portfólio de Alisson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      line-height: 1.6;
+    }
+    header {
       text-align: center;
+      padding: 40px 20px 20px;
     }
-    h1 {
-      color: #333;
+    header h1 {
+      font-size: 2.5rem;
     }
-    a {
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #00bfff;
+    }
+    .buttons a {
       display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      text-decoration: none;
+      margin: 10px 10px 0;
+      padding: 12px 24px;
+      font-size: 1rem;
       color: white;
       background-color: #007bff;
-      border-radius: 5px;
-      transition: background 0.3s;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.3s ease;
     }
-    a:hover {
+    .buttons a:hover {
       background-color: #0056b3;
+      transform: scale(1.05);
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '\f058';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      margin-right: 10px;
+      color: #00bfff;
+    }
+    a[href^="mailto"], a[href^="https"] {
+      color: #00bfff;
+      text-decoration: none;
+    }
+    a[href^="mailto"]:hover, a[href^="https"]:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>🧠 Portfólio de Alisson</h1>
-    <p>Escolha um projeto para visualizar:</p>
-    <a href="./cadastro/" target="_blank">📋 Cadastro de Clientes</a>
-    <a href="./todo/" target="_blank">✅ Lista de Tarefas</a>
-  </div>
+  <header>
+    <h1>🚀 Portfólio de Alisson Silva</h1>
+    <p>Desenvolvedor Júnior | Foco em Projetos Práticos e Aprendizado Contínuo</p>
+  </header>  <section>
+    <h2><i class="fas fa-user"></i> Sobre Mim</h2>
+    <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela UNINASSAU, apaixonado por tecnologia e aprendizado. Tenho experiência prática com HTML, CSS, JavaScript e suporte técnico. Busco oportunidades como desenvolvedor júnior ou técnico em TI, sempre focando em crescimento profissional e entrega de soluções reais.</p>
+  </section>  <section>
+    <h2><i class="fas fa-laptop-code"></i> Projetos</h2>
+    <div class="buttons">
+      <a href="./cadastro/" target="_blank"><i class="fas fa-address-card"></i> Cadastro de Clientes</a>
+      <a href="./todo/" target="_blank"><i class="fas fa-tasks"></i> Lista de Tarefas</a>
+      <a href="https://github.com/alissonndev" target="_blank"><i class="fab fa-github"></i> Meu GitHub</a>
+    </div>
+  </section>  <section>
+    <h2><i class="fas fa-tools"></i> Habilidades</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Git e GitHub</li>
+      <li>Suporte Técnico e Redes</li>
+      <li>Linux e Windows</li>
+      <li>Excel Avançado</li>
+    </ul>
+  </section>  <section>
+    <h2><i class="fas fa-envelope"></i> Contato</h2>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:alissonsilvalopes597@gmail.com">alissonsilvalopes597@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/alisson-silva-55b63b302/">alisson-silva-55b63b302</a></p>
+  </section>  <footer>
+    © 2025 Alisson Silva. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
